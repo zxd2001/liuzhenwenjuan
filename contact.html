@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="联系我们 - 柳珍文娟杂货铺">
+    <title>联系我们 - 柳珍文娟杂货铺</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <!-- 网站头部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="site-logo-name">
+                    <a href="index.html">
+                        <img src="logo/logo.png" alt="柳珍文娟杂货铺" class="site-logo">
+                        <span class="site-name">柳珍文娟杂货铺</span>
+                    </a>
+                </div>
+                
+                <!-- 搜索栏 -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="搜索商品..." class="search-input">
+                    <button class="search-button" onclick="searchProducts()">
+                        <i data-feather="search"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">首页</a>
+                    <a href="categories.html" class="nav-link">商品分类</a>
+                    <a href="new-arrivals.html" class="nav-link">新品上架</a>
+                    <a href="hot-items.html" class="nav-link">热销推荐</a>
+                    <a href="contact.html" class="nav-link active">联系我们</a>
+                    <a href="services.html" class="nav-link">服务保障</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h2 class="page-title">联系我们</h2>
+            <p class="page-subtitle">随时为您服务</p>
+        </div>
+    </section>
+
+    <!-- 联系我们板块 -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-section">
+                    <h3><i data-feather="clock"></i> 营业时间</h3>
+                    <p>周一至周日：早上 08:00 - 晚上 21:00</p>
+                    <p class="highlight">全年无休 随时欢迎</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3><i data-feather="phone"></i> 联系电话</h3>
+                    <p>店铺热线：<strong>138-xxxx-xxxx</strong>（柳珍）</p>
+                    <p>咨询电话：<strong>139-xxxx-xxxx</strong>（文娟）</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3><i data-feather="map-pin"></i> 店铺地址</h3>
+                    <p>XX市XX区XX街道XX社区XX号</p>
+                    <p class="note">（XX超市旁，好找易停车）</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3><i data-feather="truck"></i> 配送服务</h3>
+                    <p>✓ 周边3公里内提供免费配送服务</p>
+                    <p>✓ 满30元起送</p>
+                    <p>✓ 大件商品提供上门安装服务</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3><i data-feather="credit-card"></i> 支付方式</h3>
+                    <p>支持现金、微信、支付宝、银行卡等多种支付方式</p>
+                    <p class="note">便捷安全 多种选择</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3><i data-feather="shield"></i> 售后保障</h3>
+                    <p>✓ 7天无理由退换货</p>
+                    <p>✓ 质量问题包退包换</p>
+                    <p>✓ 会员积分优惠</p>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <div class="map-placeholder">
+                    <i data-feather="map"></i>
+                    <p>店铺位置地图</p>
+                    <p class="note">可在此处嵌入实际地图</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 柳珍文娟杂货铺 版权所有</p>
+            <p>便民经营 诚信为本</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

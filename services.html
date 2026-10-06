@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="服务保障 - 柳珍文娟杂货铺">
+    <title>服务保障 - 柳珍文娟杂货铺</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <!-- 网站头部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="site-logo-name">
+                    <a href="index.html">
+                        <img src="logo/logo.png" alt="柳珍文娟杂货铺" class="site-logo">
+                        <span class="site-name">柳珍文娟杂货铺</span>
+                    </a>
+                </div>
+                
+                <!-- 搜索栏 -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="搜索商品..." class="search-input">
+                    <button class="search-button" onclick="searchProducts()">
+                        <i data-feather="search"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">首页</a>
+                    <a href="categories.html" class="nav-link">商品分类</a>
+                    <a href="new-arrivals.html" class="nav-link">新品上架</a>
+                    <a href="hot-items.html" class="nav-link">热销推荐</a>
+                    <a href="contact.html" class="nav-link">联系我们</a>
+                    <a href="services.html" class="nav-link active">服务保障</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h2 class="page-title">服务保障</h2>
+            <p class="page-subtitle">品质保证 贴心服务</p>
+        </div>
+    </section>
+
+    <!-- 服务保障板块 -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="check-circle"></i>
+                    </div>
+                    <h3 class="service-name">正品保障</h3>
+                    <p class="service-desc">所有商品来自正规渠道，保证100%正品</p>
+                    <ul class="service-details">
+                        <li>严格的供应商筛选标准</li>
+                        <li>完整的进货渠道追溯</li>
+                        <li>假一罚十承诺</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="refresh-cw"></i>
+                    </div>
+                    <h3 class="service-name">7天退换</h3>
+                    <p class="service-desc">无理由退换货，让您购物无忧</p>
+                    <ul class="service-details">
+                        <li>7天无理由退换货</li>
+                        <li>质量问题免费退换</li>
+                        <li>快速处理退换申请</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="truck"></i>
+                    </div>
+                    <h3 class="service-name">免费配送</h3>
+                    <p class="service-desc">周边3公里免费送货上门</p>
+                    <ul class="service-details">
+                        <li>3公里内免费配送</li>
+                        <li>满30元起送</li>
+                        <li>大件商品上门安装</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="star"></i>
+                    </div>
+                    <h3 class="service-name">会员优惠</h3>
+                    <p class="service-desc">积分抵现金，会员日享9.5折</p>
+                    <ul class="service-details">
+                        <li>消费满10元积1分</li>
+                        <li>积分可抵扣现金</li>
+                        <li>每周三会员日额外9.5折</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="tag"></i>
+                    </div>
+                    <h3 class="service-name">价格实惠</h3>
+                    <p class="service-desc">比超市便宜10%-20%</p>
+                    <ul class="service-details">
+                        <li>薄利多销原则</li>
+                        <li>定期促销活动</li>
+                        <li>部分商品低至5折</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-feather="clock"></i>
+                    </div>
+                    <h3 class="service-name">全年无休</h3>
+                    <p class="service-desc">每天08:00-21:00营业</p>
+                    <ul class="service-details">
+                        <li>周一至周日营业</li>
+                        <li>节假日正常营业</li>
+                        <li>随时为您提供服务</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-commitment">
+                <h3>我们的承诺</h3>
+                <div class="commitment-grid">
+                    <div class="commitment-item">
+                        <h4>品质第一</h4>
+                        <p>严格把控商品质量，为您提供放心可靠的产品</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h4>诚信经营</h4>
+                        <p>明码标价，童叟无欺，赢得街坊邻里信任</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h4>贴心服务</h4>
+                        <p>用心对待每一位顾客，提供温馨周到的服务</p>
+                    </div>
+                    <div class="commitment-item">
+                        <h4>持续改进</h4>
+                        <p>不断优化服务流程，提升购物体验</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 柳珍文娟杂货铺 版权所有</p>
+            <p>便民经营 诚信为本</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

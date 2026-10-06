@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="商品分类 - 柳珍文娟杂货铺">
+    <title>商品分类 - 柳珍文娟杂货铺</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <!-- 网站头部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="site-logo-name">
+                    <a href="index.html">
+                        <img src="logo/logo.png" alt="柳珍文娟杂货铺" class="site-logo">
+                        <span class="site-name">柳珍文娟杂货铺</span>
+                    </a>
+                </div>
+                
+                <!-- 搜索栏 -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="搜索商品..." class="search-input">
+                    <button class="search-button" onclick="searchProducts()">
+                        <i data-feather="search"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">首页</a>
+                    <a href="categories.html" class="nav-link active">商品分类</a>
+                    <a href="new-arrivals.html" class="nav-link">新品上架</a>
+                    <a href="hot-items.html" class="nav-link">热销推荐</a>
+                    <a href="contact.html" class="nav-link">联系我们</a>
+                    <a href="services.html" class="nav-link">服务保障</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h2 class="page-title">商品分类</h2>
+            <p class="page-subtitle">8大品类 500+商品 满足您的日常需求</p>
+        </div>
+    </section>
+
+    <!-- 商品分类板块 -->
+    <section id="daily" class="categories">
+        <div class="container">
+            <h2 class="section-title">日用百货</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">洗洁精补充装</h3>
+                    <p class="product-price">¥9.90</p>
+                    <p class="product-desc">去油强力 温和护手</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">抽纸家庭装</h3>
+                    <p class="product-price">¥15.80</p>
+                    <p class="product-desc">三层加厚 柔软亲肤</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">垃圾袋加厚型</h3>
+                    <p class="product-price">¥8.90</p>
+                    <p class="product-desc">承重力强 不易破损</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">牙刷套装</h3>
+                    <p class="product-price">¥19.90</p>
+                    <p class="product-desc">软毛护龈 家庭实惠装</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="home" class="categories">
+        <div class="container">
+            <h2 class="section-title">家居小件</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">塑料收纳盒</h3>
+                    <p class="product-price">¥12.50</p>
+                    <p class="product-desc">透明整理 多种规格</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">挂钩免打孔</h3>
+                    <p class="product-price">¥6.50</p>
+                    <p class="product-desc">强力粘贴 不伤墙面</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">密封罐储物罐</h3>
+                    <p class="product-price">¥18.50</p>
+                    <p class="product-desc">防潮防虫 透明可视</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">香薰蜡烛</h3>
+                    <p class="product-price">¥19.90</p>
+                    <p class="product-desc">天然香氛 舒缓放松</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="snacks" class="categories">
+        <div class="container">
+            <h2 class="section-title">零食饮品</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">薯片大礼包</h3>
+                    <p class="product-price">¥28.90</p>
+                    <p class="product-desc">多口味组合 酥脆可口</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">矿泉水整箱</h3>
+                    <p class="product-price">¥22.00</p>
+                    <p class="product-desc">24瓶装 天然纯净</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">坚果混合装</h3>
+                    <p class="product-price">¥35.80</p>
+                    <p class="product-desc">营养健康 每日坚果</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">茶叶礼盒</h3>
+                    <p class="product-price">¥58.00</p>
+                    <p class="product-desc">多品种选择 送礼自饮</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="stationery" class="categories">
+        <div class="container">
+            <h2 class="section-title">文具杂货</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">中性笔套装</h3>
+                    <p class="product-price">¥12.80</p>
+                    <p class="product-desc">0.5mm 书写流畅</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">便利贴多色</h3>
+                    <p class="product-price">¥8.50</p>
+                    <p class="product-desc">粘性好 不留痕</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">胶带透明封箱</h3>
+                    <p class="product-price">¥7.90</p>
+                    <p class="product-desc">粘性强 不易断</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">文件袋资料袋</h3>
+                    <p class="product-price">¥15.00</p>
+                    <p class="product-desc">拉链设计 耐用防水</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cleaning" class="categories">
+        <div class="container">
+            <h2 class="section-title">洗护清洁</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">洗衣液大桶装</h3>
+                    <p class="product-price">¥32.90</p>
+                    <p class="product-desc">深层去污 清香持久</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">厨房清洁海绵</h3>
+                    <p class="product-price">¥5.80</p>
+                    <p class="product-desc">柔软吸水 不易掉渣</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">橡胶手套家务</h3>
+                    <p class="product-price">¥11.80</p>
+                    <p class="product-desc">加厚耐用 保护双手</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">钢丝球套装</h3>
+                    <p class="product-price">¥5.50</p>
+                    <p class="product-desc">强效去污 经久耐用</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kitchen" class="categories">
+        <div class="container">
+            <h2 class="section-title">厨房用具</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">微波炉专用碗</h3>
+                    <p class="product-price">¥16.80</p>
+                    <p class="product-desc">耐高温 带盖便捷</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">多功能削皮器</h3>
+                    <p class="product-price">¥7.20</p>
+                    <p class="product-desc">锋利好用 省力省时</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">保温饭盒</h3>
+                    <p class="product-price">¥45.00</p>
+                    <p class="product-desc">304不锈钢 持久保温</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">马克杯陶瓷</h3>
+                    <p class="product-price">¥24.90</p>
+                    <p class="product-desc">大容量带盖 办公适用</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="appliances" class="categories">
+        <div class="container">
+            <h2 class="section-title">生活电器</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">电动牙刷</h3>
+                    <p class="product-price">¥89.00</p>
+                    <p class="product-desc">声波清洁 USB充电</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">电池5号装</h3>
+                    <p class="product-price">¥16.80</p>
+                    <p class="product-desc">碱性电池 持久耐用</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">LED节能灯泡</h3>
+                    <p class="product-price">¥12.90</p>
+                    <p class="product-desc">省电耐用 明亮护眼</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">插线板排插</h3>
+                    <p class="product-price">¥38.00</p>
+                    <p class="product-desc">防过载 6位USB</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal" class="categories">
+        <div class="container">
+            <h2 class="section-title">个人护理</h2>
+            <div class="product-grid">
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">洗面奶温和型</h3>
+                    <p class="product-price">¥35.80</p>
+                    <p class="product-desc">深层清洁 补水保湿</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">卡通创口贴</h3>
+                    <p class="product-price">¥6.80</p>
+                    <p class="product-desc">防水透气 儿童适用</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">梳子美发梳</h3>
+                    <p class="product-price">¥18.50</p>
+                    <p class="product-desc">防静电 按摩头皮</p>
+                </a>
+                <a href="product-detail.html" class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">商品图片</div>
+                    </div>
+                    <h3 class="product-name">化妆棉卸妆棉</h3>
+                    <p class="product-price">¥13.90</p>
+                    <p class="product-desc">柔软亲肤 不掉絮</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 柳珍文娟杂货铺 版权所有</p>
+            <p>便民经营 诚信为本</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

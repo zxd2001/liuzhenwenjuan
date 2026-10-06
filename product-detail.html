@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情 - 柳珍文娟杂货铺</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <!-- 网站头部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="site-logo-name">
+                    <a href="index.html">
+                        <img src="logo/logo.png" alt="柳珍文娟杂货铺" class="site-logo">
+                        <span class="site-name">柳珍文娟杂货铺</span>
+                    </a>
+                </div>
+                
+                <!-- 搜索栏 -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="搜索商品..." class="search-input">
+                    <button class="search-button" onclick="searchProducts()">
+                        <i data-feather="search"></i>
+                    </button>
+                </div>
+
+                <button class="mobile-menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">首页</a>
+                    <a href="categories.html" class="nav-link">商品分类</a>
+                    <a href="new-arrivals.html" class="nav-link">新品上架</a>
+                    <a href="hot-items.html" class="nav-link">热销推荐</a>
+                    <a href="contact.html" class="nav-link">联系我们</a>
+                    <a href="services.html" class="nav-link">服务保障</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 商品详情区域 -->
+    <section class="product-detail-section">
+        <div class="container">
+            <!-- 返回按钮 -->
+            <div class="back-nav">
+                <a href="javascript:history.back()" class="back-link">
+                    <i data-feather="arrow-left"></i>
+                    <span>返回</span>
+                </a>
+            </div>
+
+            <div class="product-detail-container">
+                <!-- 左侧：商品图片 -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <div class="placeholder-image large">商品主图</div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <div class="placeholder-image small">图1</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-image small">图2</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-image small">图3</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-image small">图4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧：商品信息 -->
+                <div class="product-info">
+                    <h1 class="product-detail-title">洗洁精家用大桶装</h1>
+                    
+                    <div class="product-tags">
+                        <span class="tag hot">热销</span>
+                        <span class="tag new">新品</span>
+                    </div>
+
+                    <div class="product-price-section">
+                        <div class="price-row">
+                            <span class="price-label">价格：</span>
+                            <span class="current-price">¥18.90</span>
+                            <span class="original-price">¥25.00</span>
+                        </div>
+                        <div class="price-tips">会员价：¥17.90</div>
+                    </div>
+
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">销量：</span>
+                            <span class="meta-value">1258件</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">库存：</span>
+                            <span class="meta-value stock-available">充足</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">配送：</span>
+                            <span class="meta-value">周边3公里免费配送</span>
+                        </div>
+                    </div>
+
+                    <div class="product-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">规格：</span>
+                            <div class="spec-options">
+                                <button class="spec-option active">2kg装</button>
+                                <button class="spec-option">5kg装</button>
+                            </div>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">香型：</span>
+                            <div class="spec-options">
+                                <button class="spec-option active">柠檬</button>
+                                <button class="spec-option">橙子</button>
+                                <button class="spec-option">茶籽</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quantity-section">
+                        <span class="quantity-label">数量：</span>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" max="99">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-buy-now">立即购买</button>
+                        <button class="btn-add-cart">加入购物车</button>
+                        <button class="btn-contact">
+                            <i data-feather="phone"></i>
+                            <span>电话咨询</span>
+                        </button>
+                    </div>
+
+                    <div class="service-promises">
+                        <div class="promise-item">
+                            <i data-feather="check-circle"></i>
+                            <span>7天无理由退换</span>
+                        </div>
+                        <div class="promise-item">
+                            <i data-feather="shield"></i>
+                            <span>正品保障</span>
+                        </div>
+                        <div class="promise-item">
+                            <i data-feather="truck"></i>
+                            <span>满30元起送</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品详细信息标签页 -->
+            <div class="product-tabs">
+                <div class="tab-nav">
+                    <button class="tab-button active" data-tab="detail">商品详情</button>
+                    <button class="tab-button" data-tab="specs">规格参数</button>
+                    <button class="tab-button" data-tab="reviews">用户评价</button>
+                </div>
+
+                <div class="tab-content">
+                    <!-- 商品详情 -->
+                    <div class="tab-panel active" id="detail">
+                        <h3>产品介绍</h3>
+                        <p>本店精选优质洗洁精，采用天然植物配方，去污力强，温和不伤手。适合清洗餐具、果蔬等，泡沫丰富，易冲洗，无残留。</p>
+                        
+                        <h3>产品特点</h3>
+                        <ul class="detail-list">
+                            <li>天然植物配方，温和不伤手</li>
+                            <li>强效去油污，一冲即净</li>
+                            <li>泡沫丰富细腻，用量省</li>
+                            <li>清新柠檬香味，去除异味</li>
+                            <li>大容量实惠装，经济耐用</li>
+                        </ul>
+
+                        <h3>使用方法</h3>
+                        <p>1. 将洗洁精挤在湿润的洗碗布或直接滴在餐具上</p>
+                        <p>2. 加少量水搓揉起泡</p>
+                        <p>3. 清洗餐具后用清水冲洗干净即可</p>
+
+                        <h3>注意事项</h3>
+                        <p>• 请放置于儿童接触不到的地方</p>
+                        <p>• 如不慎入眼，请立即用清水冲洗</p>
+                        <p>• 存放于阴凉干燥处，避免阳光直射</p>
+                    </div>
+
+                    <!-- 规格参数 -->
+                    <div class="tab-panel" id="specs">
+                        <table class="specs-table">
+                            <tr>
+                                <td class="spec-name">品牌</td>
+                                <td class="spec-value">优质品牌</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-name">净含量</td>
+                                <td class="spec-value">2kg / 5kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-name">香型</td>
+                                <td class="spec-value">柠檬 / 橙子 / 茶籽</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-name">成分</td>
+                                <td class="spec-value">表面活性剂、香精、水等</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-name">保质期</td>
+                                <td class="spec-value">3年</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-name">生产日期</td>
+                                <td class="spec-value">见瓶身标识</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-name">适用范围</td>
+                                <td class="spec-value">餐具、果蔬清洗</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- 用户评价 -->
+                    <div class="tab-panel" id="reviews">
+                        <div class="reviews-summary">
+                            <div class="rating-score">
+                                <span class="score">4.8</span>
+                                <span class="score-label">综合评分</span>
+                            </div>
+                            <div class="rating-stats">
+                                <div class="stat-row">
+                                    <span>好评率</span>
+                                    <span class="stat-value">98%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span>评价数</span>
+                                    <span class="stat-value">326条</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">张女士</span>
+                                    <span class="review-date">2026-09-28</span>
+                                </div>
+                                <div class="review-rating">
+                                    ⭐⭐⭐⭐⭐
+                                </div>
+                                <p class="review-content">质量很好，去油污效果不错，而且不伤手，味道也清香。店家服务态度好，送货快，会继续回购！</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">李先生</span>
+                                    <span class="review-date">2026-09-25</span>
+                                </div>
+                                <div class="review-rating">
+                                    ⭐⭐⭐⭐⭐
+                                </div>
+                                <p class="review-content">大桶装很实惠，用了一段时间了，洗碗很干净，泡沫丰富，性价比高。</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">王女士</span>
+                                    <span class="review-date">2026-09-20</span>
+                                </div>
+                                <div class="review-rating">
+                                    ⭐⭐⭐⭐
+                                </div>
+                                <p class="review-content">洗洁精不错，就是柠檬味有点淡，不过清洁效果很好，会推荐给朋友。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 推荐商品 -->
+            <div class="recommended-products">
+                <h2 class="section-title">相关推荐</h2>
+                <div class="products-grid">
+                    <a href="product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-image">商品图片</div>
+                        </div>
+                        <h3 class="product-name">厨房清洁剂</h3>
+                        <p class="product-price">¥12.90</p>
+                        <p class="product-desc">强力去油 快速清洁</p>
+                    </a>
+                    <a href="product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-image">商品图片</div>
+                        </div>
+                        <h3 class="product-name">洗衣液</h3>
+                        <p class="product-price">¥29.90</p>
+                        <p class="product-desc">深层洁净 留香持久</p>
+                    </a>
+                    <a href="product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-image">商品图片</div>
+                        </div>
+                        <h3 class="product-name">洗手液</h3>
+                        <p class="product-price">¥15.90</p>
+                        <p class="product-desc">抑菌温和 呵护双手</p>
+                    </a>
+                    <a href="product-detail.html" class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-image">商品图片</div>
+                        </div>
+                        <h3 class="product-name">消毒液</h3>
+                        <p class="product-price">¥19.90</p>
+                        <p class="product-desc">家居消毒 安全有效</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 柳珍文娟杂货铺 版权所有 | <a href="contact.html" class="footer-link">联系我们</a></p>
+            <p>便民经营 诚信为本</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 初始化 Feather Icons
+        feather.replace();
+
+        // 缩略图切换
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // 规格选择
+        document.querySelectorAll('.spec-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const parent = this.parentElement;
+                parent.querySelectorAll('.spec-option').forEach(o => o.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // 数量控制
+        const quantityInput = document.querySelector('.quantity-input');
+        document.querySelector('.quantity-btn.minus').addEventListener('click', () => {
+            const value = parseInt(quantityInput.value);
+            if (value > 1) quantityInput.value = value - 1;
+        });
+        document.querySelector('.quantity-btn.plus').addEventListener('click', () => {
+            const value = parseInt(quantityInput.value);
+            if (value < 99) quantityInput.value = value + 1;
+        });
+
+        // 标签页切换
+        document.querySelectorAll('.tab-button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.dataset.tab;
+                
+                document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                
+                this.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
